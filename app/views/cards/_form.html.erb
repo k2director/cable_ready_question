@@ -1,0 +1,12 @@
+<%= form_with(model: @card, local: true) do |form| %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+  <div id="processing", class="d-none">
+    IM WORKING ON IT!
+  </div>
+<% end %>
